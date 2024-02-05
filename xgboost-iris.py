@@ -8,9 +8,6 @@ iris = load_iris()
 X = pd.DataFrame(iris.data, columns=iris.feature_names)
 y = pd.Series(iris.target)
 
-print(X)
-print(y)
-
 X_train, X_test, y_train, y_test = train_test_split(X, y)
 
 xgb_model = xgb.XGBRegressor(
